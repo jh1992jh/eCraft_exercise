@@ -1,0 +1,11 @@
+<template>
+  <footer class="info-footer">
+    <ul class="info-footer-meeting-liss">
+      <li repeat.for="meeting of meetings">
+        <p class="time">${meeting.StartTime} - ${meeting.EndTime}</p>
+        <h3 class="subject">${meeting.Subject}</h3>
+        <p class="organizer">${meeting.Organizer}</p>
+      </li>
+    </ul>
+  </footer>
+</template>

@@ -1,0 +1,17 @@
+<template>
+  <div class="info-preview">
+    <div class="preview-box">
+      <h3>CURRENT MEETING</h3>
+      <h2 class="subject">${currentMeeting.Subject.toUpperCase()}</h2>
+      <div class="progress">
+        <span class="time">${currentMeeting.StartTime}</span>
+        <div class="progress-bar">
+          <!-- WRITE A METHOD THAT CALCS THE % FOR THE FILLING -->
+          <div class="bar-filling"></div>
+        </div>
+        <span class="time">${currentMeeting.EndTime}</span>
+      </div>
+      <p class="organizer">${currentMeeting.Organizer.toUpperCase()}</p>
+    </div>
+  </div>
+</template>

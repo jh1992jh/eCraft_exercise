@@ -1,0 +1,204 @@
+/* Mixins */
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-xy-center {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+$muted: rgb(180, 180, 180);
+$yellow: #fc0;
+
+body {
+  background: url("assets/img/bg-image.jpg");
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side {
+  flex: 7;
+  height: 100vh;
+}
+
+.right-side {
+  flex: 3;
+  height: 100vh;
+  background: #fff;
+}
+
+/* INFOPREVIEW STYLES */
+.info-preview {
+  height: 70%;
+  width: 100%;
+  @include flex-col();
+  @include flex-xy-center();
+
+  .preview-box {
+    @include flex-col();
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 50%;
+
+    h3 {
+      color: $muted;
+      margin: 0;
+    }
+
+    .subject {
+      color: #fff;
+      font-size: 3rem;
+      max-width: 80%;
+      text-align: center;
+      margin: 0;
+    }
+
+    .progress {
+      @include flex-y-center();
+      width: 50%;
+
+      height: 1rem;
+      span {
+        color: $muted;
+      }
+      .progress-bar {
+        margin: 0 1em;
+        background: $muted;
+        width: 80%;
+        height: 100%;
+        max-height: 0.5rem;
+        border-radius: 5px;
+        .bar-filling {
+          height: 100%;
+          width: 80%;
+          background: $yellow;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .organizer {
+      color: $muted;
+    }
+  }
+}
+/* INFOFOOTER STYLES */
+
+.info-footer {
+  width: 100%;
+  height: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  ul {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+
+    li {
+      magin: 0 1em;
+      width: 33%;
+      .time,
+      .organizer {
+        color: $muted;
+      }
+
+      .subject {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* SCHEDULE STYLES */
+.schedule {
+  height: 100%;
+  width: 100%;
+
+  .schedule-header {
+    max-width: 100%;
+    height: 10%;
+    padding: 0 1em;
+    @include flex-col();
+    justify-content: center;
+
+    .muted {
+      color: $muted;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    box-shadow: 0px 15px 50px #fff;
+  }
+
+  .meeting-list-container {
+    width: 100%;
+    height: 100%;
+    .meeting-list {
+      max-width: 100%;
+      height: 80%;
+      overflow-y: scroll;
+      padding: 0 1em;
+
+      .meeting-list-item {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .time {
+          height: 1rem;
+          width: 20%;
+          margin-top: -5px;
+          z-index: 0;
+        }
+
+        .line {
+          width: 80%;
+          box-shadow: inset 0px 2px 2px -2px $muted;
+          height: 2px;
+          z-index: 0;
+        }
+
+        .meeting-preview {
+          width: 80%;
+          min-height: 200px;
+          background: #fff;
+          z-index: 1000;
+          position: absolute;
+          border-left: 5px solid $yellow;
+          left: 20%;
+        }
+      }
+    }
+  }
+}
