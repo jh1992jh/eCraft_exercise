@@ -1,6 +1,7 @@
 {
   "meetings": [
     {
+      "Id": "0c30b48d-27c8-4002-aec1-603abffea975",
       "Subject": "eCraft Management Monthly Meeting",
       "Organizer": "Ville Hemmil�",
       "StartTime": "2018-03-03T07:30:00",
@@ -18,28 +19,35 @@
           "Name": "Tero Tapanainen",
           "Title": "CTO"
         }
-      ]
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
     },
     {
+      "Id": "0f6b21c2-b766-4515-b5fd-0777dfc8f3f6",
       "Subject": "Jooses Design workshop",
       "Organizer": "Joose Rautemaa",
       "StartTime": "2018-03-03T09:30:00",
       "EndTime": "2018-03-03T10:30:00",
-      "Participants": null
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
     },
     {
+      "Id": "61df2941-25a8-496c-b682-e1ccf757feac",
       "Subject": "Joose goes sickbr0",
       "Organizer": "Joose Rautemaa",
       "StartTime": "2018-03-03T10:30:00",
       "EndTime": "2018-03-03T11:30:00",
-      "Participants": null
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
     },
     {
+      "Id": "f9d645b6-5501-44b1-9e52-7e5be5c6e483",
       "Subject": "Nousiainen Inspection",
       "Organizer": "Joose Rautemaa",
       "StartTime": "2018-03-03T11:30:00",
       "EndTime": "2018-03-03T13:30:00",
-      "Participants": null
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
     }
   ]
 }

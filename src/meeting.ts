@@ -5,6 +5,7 @@ interface Participant {
 
 export class Meeting {
   constructor(
+    public Id: string,
     public Subject: string,
     public Organizer: string,
     public StartTime: string,

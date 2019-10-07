@@ -14,12 +14,12 @@ export class App {
       {
         route: "",
         moduleId: PLATFORM.moduleName("schedule"),
-        title: "Select_Meeting"
+        name: "schedule"
       },
       {
-        route: "meeting/:subject",
-        mouduleId: PLATFORM.moduleName("meeting"),
-        name: "meeting"
+        route: "meeting/:Id",
+        moduleId: PLATFORM.moduleName("meeting-detail"),
+        name: "meeting-detail"
       }
     ]);
   }

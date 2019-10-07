@@ -1,0 +1,52 @@
+<template>
+  <div class="meeting-detail-container">
+    <header class="meeting-detail-header">
+      <a route-href="route: schedule;"><span class="go-back"><</span></a>
+      <p class="subject">${currentMeeting.Subject}</p>
+    </header>
+    <div class="meeting-info-block date">
+      <img src="./assets/icons/time.png" alt="date" />
+      <p class="date">${currentMeeting.displayDate}</p>
+    </div>
+    <div class="meeting-info-block time">
+      <img src="./assets/icons/time.png" alt="time" />
+      <p class="time">
+        ${currentMeeting.StartTime} TO ${currentMeeting.EndTime}
+      </p>
+    </div>
+    <div class="meeting-info-block participants">
+      <img src="./assets/icons/person.png" alt="date" />
+      <p class="participants">PARTICIPANTS</p>
+      <span class="toggle" click.trigger="toggleShowParticipants()">^</span>
+    </div>
+    <div if.bind="showParticipants" class="show-participants">
+      <div class="participants" if.bind="currentMeeting.Participants">
+        <ul class="participant-list">
+          <li
+            class="participant"
+            repeat.for="participant of currentMeeting.Participants"
+          >
+            <div class="participant-thumbnail"></div>
+            <div class="name-and-title">
+              <p class="participant-name">${participant.Name.toUpperCase()}</p>
+              <p class="participant-title">
+                ${participant.Title.toUpperCase()}
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div else class="no-participants">
+        <p>No participants at the moment</p>
+      </div>
+    </div>
+    <div class="meeting-info-block participants">
+      <img src="./assets/icons/description.png" alt="date" />
+      <p class="participants">DESCRIPTION</p>
+      <span class="toggle"></span>
+    </div>
+    <div class="meeting-description-text">
+      <p class="description-text">"${currentMeeting.Description}"</p>
+    </div>
+  </div>
+</template>

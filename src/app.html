@@ -6,13 +6,14 @@
   <require from="./info-footer"></require>
   <require from="./info-preview"></require>
   <require from="./schedule"></require>
+  <require from="./meeting-detail"></require>
   <div class="main-container">
     <section class="left-side">
       <info-preview></info-preview>
       <info-footer></info-footer>
     </section>
     <section class="right-side">
-      <schedule></schedule>
+      <router-view></router-view>
     </section>
   </div>
 </template>

@@ -6,6 +6,7 @@ interface Participant {
 }
 
 interface Meeting {
+  Id: string;
   Subject: string;
   Organizer: string;
   StartTime: string;
@@ -14,10 +15,20 @@ interface Meeting {
 }
 
 export class DummyBackend {
+  currentMeeting = {};
   constructor(public meetings: Meeting[] = []) {}
 
   fetchMeetings() {
     this.meetings = meetings;
+    this.currentMeeting = meetings[1];
     return this.meetings;
+  }
+
+  getMeeting(id) {
+    const meeting = this.meetings.filter(
+      (meeting: Meeting) => meeting.Id === id
+    );
+
+    return meeting[0];
   }
 }
