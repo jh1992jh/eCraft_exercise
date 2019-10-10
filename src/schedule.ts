@@ -61,10 +61,10 @@ export class Schedule {
     const mins = new Date().getMinutes();
     const finalPosition = hoursPosition + mins;
 
-    /* if (hours < 7 || hours > 16) {
+    if (hours < 7 || hours > 16) {
       this.decorationStickPosition = false;
       return;
-    } */
+    }
 
     // First param: klo 7 = 0; klo 10 = 180, klo 11 = 240,klo 11:15 = 255, klo 12 = 300, klo 17 = 600 etc..., see how 60 moves it by an hour and 30 by half an hour,  200 comes from the ul lenght 100% would be five hours but since there are 10 hours in the list it has to be multiplied by 200
     this.decorationStickPosition = (finalPosition / totalAvailableMins) * 200;
