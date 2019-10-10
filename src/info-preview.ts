@@ -12,20 +12,18 @@ export class InfoPreview {
 
   constructor(public api: DummyBackend) {}
   created() {
-    // const meetings = this.api.fetchMeetings();
-
     this.meeting = this.api.getCurrentMeeting() as any;
-    console.log(this.meeting);
+
     if (this.meeting) {
       this.progress = this.calculateMeetingProgress(this.meeting);
       this.processCurrentMeeting();
-    } else if (!this.meeting) {
+    } /* else if (!this.meeting) {
       // Fix this any type
       this.meeting = this.api.getNextMeeting() as any;
 
       this.isNextMeeting = true;
       this.processCurrentMeeting();
-    }
+    } */
   }
 
   processCurrentMeeting() {

@@ -20,6 +20,12 @@
   align-items: center;
 }
 
+@mixin mobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
 $muted: rgb(160, 160, 160);
 $yellow: #fc0;
 
@@ -29,6 +35,10 @@ body {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
   margin: 0;
+
+  @include mobile {
+    background: none;
+  }
 }
 
 ul {
@@ -44,12 +54,21 @@ a {
   display: flex;
   max-height: 100%;
   max-width: 100%;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .left-side {
   flex: 7;
   height: 100vh;
   flex-direction: column;
+
+  @include mobile {
+    background: url("assets/img/bg-image.jpg");
+    background-size: cover;
+  }
 }
 
 .right-side {
@@ -65,12 +84,19 @@ a {
   @include flex-col();
   @include flex-xy-center();
 
+  @include mobile {
+    height: 70%;
+  }
   .preview-box {
     @include flex-col();
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    min-height: 50%;
+    height: 40%;
+
+    @include mobile {
+      height: 90%;
+    }
 
     h3 {
       color: $muted;
@@ -81,14 +107,22 @@ a {
       height: 4px;
       border-radius: 1px;
       background: $muted;
+      @include mobile {
+        width: 10%;
+      }
     }
 
-    .subject {
+    .subject,
+    .no-meeting {
       color: #fff;
       font-size: 3rem;
       max-width: 80%;
       text-align: center;
       margin: 0;
+
+      @include mobile {
+        font-size: 2.5em;
+      }
     }
 
     .progress {
@@ -113,6 +147,12 @@ a {
           border-radius: 5px;
         }
       }
+
+      @include mobile {
+        width: 100%;
+        padding: 0 1em;
+        box-sizing: border-box;
+      }
     }
 
     .organizer {
@@ -126,6 +166,11 @@ a {
   width: 100%;
   height: 20%;
   background: rgba(30, 30, 40, 0.4);
+  @include mobile {
+    padding: 1em;
+    box-sizing: border-box;
+    height: 30%;
+  }
   ul {
     display: flex;
     flex: 1;
@@ -146,6 +191,15 @@ a {
       .subject {
         color: #fff;
         margin: 0;
+      }
+
+      @include mobile {
+        @include flex-col();
+        padding: 1em 0;
+        justify-content: space-between;
+        height: 100%;
+        font-size: 0.8rem;
+        width: 30%;
       }
     }
   }
@@ -179,6 +233,10 @@ a {
   .meeting-list-container {
     width: 100%;
     height: 80%;
+
+    @include mobile {
+      height: 100%;
+    }
     .meeting-list {
       max-width: 100%;
       height: 80%;
@@ -186,10 +244,22 @@ a {
       padding: 0 1em;
       position: relative;
       .decoration-stick {
-        width: 100%;
-        height: 5px;
-        background: $yellow;
+        @include flex-y-center();
+        width: 78%;
         position: absolute;
+        left: 18%;
+        z-index: 2000;
+        .circle {
+          height: 15px;
+          width: 15px;
+          background: $yellow;
+          border-radius: 100%;
+        }
+        .line {
+          height: 5px;
+          width: 100%;
+          background: $yellow;
+        }
       }
       .meeting-list-item {
         height: 10%;
@@ -294,6 +364,10 @@ a {
     border-bottom: 1px solid $muted;
     overflow-y: auto;
     overflow-x: hidden;
+
+    @include mobile {
+      height: 30vh;
+    }
     .participant-list {
       width: 100%;
       height: 15vh;

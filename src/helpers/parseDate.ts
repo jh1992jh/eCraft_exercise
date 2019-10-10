@@ -46,7 +46,6 @@ export const getDisplayDate = date => {
       }
     });
 
-  console.log(displayDate);
   return `${displayDay.toUpperCase()}, ${displayDate[0]}.${displayDate[1]}.${
     displayDate[2]
   }`;

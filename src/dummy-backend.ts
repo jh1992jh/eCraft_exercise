@@ -57,15 +57,27 @@ export class DummyBackend {
   }
 
   getNextMeetings() {
-    return meetings.filter(
+    const nextMeetings = meetings.filter(
       meeting => Date.parse(meeting.StartTime) > Date.now()
     );
+
+    const sortedMeetings = nextMeetings.sort((a: any, b: any): number => {
+      a = new Date(a.StartTime);
+      b = new Date(b.StartTime);
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+
+    return sortedMeetings;
   }
 
   getNextMeeting() {
-    return meetings.filter(
-      meeting => Date.parse(meeting.StartTime) > Date.now()
-    )[0];
+    return meetings
+      .filter(meeting => Date.parse(meeting.StartTime) > Date.now())
+      .sort((a: any, b: any): number => {
+        a = new Date(a.StartTime);
+        b = new Date(b.StartTime);
+        return a < b ? -1 : a > b ? 1 : 0;
+      })[0];
   }
   getCurrentMeeting() {
     const isCurrentMeeting = meeting => {

@@ -1,6 +1,6 @@
 <template>
   <div class="info-preview">
-    <div class="preview-box">
+    <div class="preview-box" if.bind="meeting">
       <h3 if.bind="isNextMeeting">NEXT MEETING</h3>
       <h3 else>CURRENT MEETING</h3>
       <span class="line"></span>
@@ -15,6 +15,10 @@
         <span class="time">${meeting.EndTime}</span>
       </div>
       <p class="organizer">${meeting.Organizer.toUpperCase()}</p>
+    </div>
+
+    <div class="preview-box" else>
+      <h2 class="no-meeting">No meeting going on a the moment</h2>
     </div>
   </div>
 </template>

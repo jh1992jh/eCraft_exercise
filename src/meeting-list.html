@@ -2,7 +2,9 @@
   <div class="meeting-list-container">
     <ul class="meeting-list">
         
-      <div class="decoration-stick" css="top: ${decorationStickPosition}%" ></div> 
+      <div class="decoration-stick" css="top: ${decorationStickPosition}%" if.bind="decorationStickPosition">
+        <span class="circle"></span><div class="line"></div>
+      </div> 
       
         <li class="meeting-list-item" repeat.for="meeting of schedule">
           <div class="time">${meeting.time}</div>
