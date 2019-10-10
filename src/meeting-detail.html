@@ -1,7 +1,7 @@
 <template>
   <div class="meeting-detail-container">
     <header class="meeting-detail-header">
-      <a route-href="route: schedule;"><span class="go-back"><</span></a>
+      <a route-href="route: schedule;"><i class="fa fa-angle-left"></i></a>
       <p class="subject">${currentMeeting.Subject}</p>
     </header>
     <div class="meeting-info-block date">
@@ -17,7 +17,9 @@
     <div class="meeting-info-block participants">
       <img src="./assets/icons/person.png" alt="date" />
       <p class="participants">PARTICIPANTS</p>
-      <span class="toggle" click.trigger="toggleShowParticipants()">^</span>
+      <span class="toggle" click.trigger="toggleShowParticipants()"
+        ><i class="fa ${showParticipants ? 'fa-angle-up' : 'fa-angle-down'}"></i
+      ></span>
     </div>
     <div if.bind="showParticipants" class="show-participants">
       <div class="participants" if.bind="currentMeeting.Participants">

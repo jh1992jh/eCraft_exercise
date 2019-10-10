@@ -16,11 +16,14 @@ interface Meeting {
 
 export class DummyBackend {
   currentMeeting = {};
+  tomorrowsMeetings = [];
+  nextMeetings = [];
   constructor(public meetings: Meeting[] = []) {}
 
   fetchMeetings() {
     this.meetings = meetings;
-    this.currentMeeting = meetings[1];
+    this.meetings = this.getTodaysMeetings(this.meetings);
+    this.currentMeeting = this.getCurrentMeeting();
     return this.meetings;
   }
 
@@ -30,5 +33,69 @@ export class DummyBackend {
     );
 
     return meeting[0];
+  }
+
+  getTodaysMeetings(meetings) {
+    const today = new Date()
+      .toLocaleDateString()
+      .substring(0, 11)
+      .split(".")
+      .reverse()
+      .join("");
+
+    const meetingDay = meeting => {
+      return meeting.StartTime.substring(0, 10)
+        .split("-")
+        .join("");
+    };
+
+    const todaysMeetings = meetings.filter(
+      meeting => meetingDay(meeting) === today
+    );
+
+    return todaysMeetings;
+  }
+
+  getNextMeetings() {
+    return meetings.filter(
+      meeting => Date.parse(meeting.StartTime) > Date.now()
+    );
+  }
+
+  getNextMeeting() {
+    return meetings.filter(
+      meeting => Date.parse(meeting.StartTime) > Date.now()
+    )[0];
+  }
+  getCurrentMeeting() {
+    const isCurrentMeeting = meeting => {
+      const StartTimeS = Date.parse(meeting.StartTime) / 1000;
+      const EndTimeS = Date.parse(meeting.EndTime) / 1000;
+      const currentTime = Date.parse(new Date().toString()) / 1000;
+
+      if (StartTimeS < currentTime && EndTimeS > currentTime) {
+        return true;
+      } else {
+        return false;
+      }
+    };
+
+    const currentMeeting = meetings
+      .map(meeting => {
+        if (isCurrentMeeting(meeting)) {
+          return meeting;
+        }
+      })
+      .filter(meetings => meetings !== undefined);
+
+    if (currentMeeting[0]) {
+      return currentMeeting[0];
+    } else {
+    }
+  }
+
+  getTomorrowsMeetings() {
+    // get tomorrows date
+    //
   }
 }

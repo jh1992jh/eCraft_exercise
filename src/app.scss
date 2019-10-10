@@ -5,6 +5,7 @@
 }
 
 @mixin flex-xy-center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -19,7 +20,7 @@
   align-items: center;
 }
 
-$muted: rgb(180, 180, 180);
+$muted: rgb(160, 160, 160);
 $yellow: #fc0;
 
 body {
@@ -37,6 +38,7 @@ ul {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #000;
 }
 .main-container {
   display: flex;
@@ -58,7 +60,7 @@ a {
 
 /* INFOPREVIEW STYLES */
 .info-preview {
-  height: 70%;
+  height: 80%;
   width: 100%;
   @include flex-col();
   @include flex-xy-center();
@@ -73,6 +75,12 @@ a {
     h3 {
       color: $muted;
       margin: 0;
+    }
+    .line {
+      width: 3%;
+      height: 4px;
+      border-radius: 1px;
+      background: $muted;
     }
 
     .subject {
@@ -100,7 +108,7 @@ a {
         border-radius: 5px;
         .bar-filling {
           height: 100%;
-          width: 80%;
+          width: 0%;
           background: $yellow;
           border-radius: 5px;
         }
@@ -116,24 +124,28 @@ a {
 
 .info-footer {
   width: 100%;
-  height: 30%;
-  background: rgba(0, 0, 0, 0.5);
+  height: 20%;
+  background: rgba(30, 30, 40, 0.4);
   ul {
     display: flex;
     flex: 1;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
     margin: 0;
+    padding: 0;
     li {
       margin: 0 1em;
-      width: 33%;
+      width: 25%;
       .time,
       .organizer {
         color: $muted;
+        margin: 0;
       }
 
       .subject {
         color: #fff;
+        margin: 0;
       }
     }
   }
@@ -146,8 +158,8 @@ a {
 
   .schedule-header {
     max-width: 100%;
-    height: 10%;
-    padding: 0 1em;
+    height: 5%;
+    padding: 1em;
     @include flex-col();
     justify-content: center;
 
@@ -172,7 +184,13 @@ a {
       height: 80%;
       overflow-y: scroll;
       padding: 0 1em;
-
+      position: relative;
+      .decoration-stick {
+        width: 100%;
+        height: 5px;
+        background: $yellow;
+        position: absolute;
+      }
       .meeting-list-item {
         height: 10%;
         width: 100%;
@@ -229,14 +247,15 @@ a {
 
   .meeting-detail-header {
     max-width: 100%;
-    height: 10%;
+    height: 5%;
     padding: 1em;
     background: $yellow;
     display: flex;
     align-items: center;
-    .go-back {
+    i {
       color: #fff;
       margin: 0 1em;
+      font-size: 2rem;
     }
 
     .subject {
@@ -247,31 +266,43 @@ a {
 
   .meeting-info-block {
     display: flex;
+    height: 5%;
     align-items: center;
     padding: 1em;
     border-bottom: 1px solid $muted;
 
     img {
       margin: 1em;
+      height: 2em;
+      width: auto;
+    }
+
+    p {
+      font-weight: 600;
     }
 
     .toggle {
-      transform: rotateY(180deg);
-      cursor: pointer;
+      margin-left: auto;
+      i {
+        font-size: 2rem;
+      }
     }
   }
 
   .show-participants {
-    height: 21vh;
+    height: 18vh;
+    border-bottom: 1px solid $muted;
+    overflow-y: auto;
+    overflow-x: hidden;
     .participant-list {
       width: 100%;
       height: 15vh;
       .participant {
         @include flex-y-center();
-        padding: 1em;
+        padding: 0.5em 1.5em;
         .participant-thumbnail {
-          height: 3rem;
-          width: 3rem;
+          height: 2rem;
+          width: 2rem;
           margin: 0 1em;
           background: $muted;
           border-radius: 100%;

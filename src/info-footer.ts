@@ -1,17 +1,16 @@
 import { inject } from "aurelia-framework";
 import { DummyBackend } from "./dummy-backend";
-import { Meeting } from "meeting";
+import { Meeting } from "./meeting";
 import { getHour } from "./helpers/parseDate";
-
-// UNINSTALL MOMENT
 
 @inject(DummyBackend)
 export class InfoFooter {
   meetings: Meeting[];
   constructor(private api: DummyBackend) {}
   created() {
-    this.meetings = this.api.fetchMeetings();
-    this.processMeetings(this.meetings);
+    this.api.fetchMeetings();
+    this.processMeetings(this.api.getNextMeetings());
+    console.log(this.api.getNextMeetings());
   }
 
   processMeetings(meetings) {
