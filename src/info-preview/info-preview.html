@@ -2,15 +2,13 @@
   <require from="./info-preview.scss"></require>
   <div class="info-preview">
     <div class="preview-box" if.bind="meeting">
-      <h3 if.bind="isNextMeeting">NEXT MEETING</h3>
-      <h3 else>CURRENT MEETING</h3>
+      <h3>CURRENT MEETING</h3>
       <span class="line"></span>
 
       <h2 class="subject">${meeting.Subject.toUpperCase()}</h2>
       <div class="progress">
         <span class="time">${meeting.StartTime}</span>
         <div class="progress-bar">
-          <!-- WRITE A METHOD THAT CALCS THE % FOR THE FILLING -->
           <div class="bar-filling" css="width: ${progress}%"></div>
         </div>
         <span class="time">${meeting.EndTime}</span>
@@ -19,7 +17,7 @@
     </div>
 
     <div class="preview-box" else>
-      <h2 class="no-meeting">No meeting going on a the moment</h2>
+      <h2 class="no-meeting">No meeting going on at the moment</h2>
     </div>
   </div>
 </template>

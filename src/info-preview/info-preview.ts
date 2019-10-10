@@ -5,25 +5,17 @@ import { getHour } from "../helpers/parseDate";
 
 @inject(DummyBackend)
 export class InfoPreview {
-  meeting: Meeting;
-  nextMeeting: Meeting;
+  meeting;
   progress: number;
-  isNextMeeting = false;
 
   constructor(public api: DummyBackend) {}
   created() {
-    this.meeting = this.api.getCurrentMeeting() as any;
+    this.meeting = this.api.getCurrentMeeting();
 
     if (this.meeting) {
       this.progress = this.calculateMeetingProgress(this.meeting);
       this.processCurrentMeeting();
-    } /* else if (!this.meeting) {
-      // Fix this any type
-      this.meeting = this.api.getNextMeeting() as any;
-
-      this.isNextMeeting = true;
-      this.processCurrentMeeting();
-    } */
+    }
   }
 
   processCurrentMeeting() {
@@ -36,7 +28,7 @@ export class InfoPreview {
     this.meeting = processedMeeting;
   }
 
-  calculateMeetingProgress(meeting) {
+  calculateMeetingProgress(meeting: Meeting) {
     const startTimeMins = meeting.StartTime.substring(11, 16).split(":");
     const endTimeMins = meeting.EndTime.substring(11, 16).split(":");
     const currentTimeMins = new Date()

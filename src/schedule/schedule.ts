@@ -19,8 +19,9 @@ export class Schedule {
 
     this.meetings.forEach(meeting => {
       const timeInd = times.indexOf(meeting.StartTime);
-
-      this.schedule[timeInd].meeting = meeting;
+      if (this.schedule[timeInd]) {
+        this.schedule[timeInd].meeting = meeting;
+      }
     });
 
     this.calcDecorationStickPosition();
@@ -47,8 +48,7 @@ export class Schedule {
     const totalStartMins = Number(startMins[0]) * 60 + Number(startMins[1]);
     const totalEndMins = Number(endMins[0]) * 60 + Number(endMins[1]);
 
-    const difference = totalEndMins - totalStartMins;
-    const height = (difference / 30) * 100;
+    const height = (totalEndMins - totalStartMins) / 3;
 
     return `${height}%`;
   }

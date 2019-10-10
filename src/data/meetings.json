@@ -103,7 +103,7 @@
       "Subject": "eCraft Management Monthly Meeting",
       "Organizer": "Ville Hemmilä",
       "StartTime": "2019-10-10T07:00:00",
-      "EndTime": "2019-10-10T09:30:00",
+      "EndTime": "2019-10-10T08:30:00",
       "Participants": [
         {
           "Name": "Juho Röyhy",
@@ -152,7 +152,7 @@
       "Subject": "eCraft Management Monthly Meeting",
       "Organizer": "Ville Hemmilä",
       "StartTime": "2019-10-11T07:00:00",
-      "EndTime": "2019-10-11T09:30:00",
+      "EndTime": "2019-10-11T08:30:00",
       "Participants": [
         {
           "Name": "Juho Röyhy",
@@ -193,6 +193,545 @@
       "Organizer": "Joose Rautemaa",
       "StartTime": "2019-10-11T11:30:00",
       "EndTime": "2019-10-11T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "ef5396bf-4094-4588-adce-7405d86aa69b",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-14T07:00:00",
+      "EndTime": "2019-10-14T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "240e20c8-9d30-49f3-9558-062c2d57038a",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-14T09:30:00",
+      "EndTime": "2019-10-14T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "abebc33e-c92a-4bdb-9724-ae0ea19100e8",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-14T10:30:00",
+      "EndTime": "2019-10-14T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "69e3b5fe-b661-4c11-89e6-631055fbc47c",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-14T11:30:00",
+      "EndTime": "2019-10-14T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "8385b858-c186-42e9-9a7c-292cd45dd678",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-15T07:00:00",
+      "EndTime": "2019-10-15T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "89e91984-c28c-47ab-be1d-5abf4b5f803f",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-15T09:30:00",
+      "EndTime": "2019-10-15T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "c1cdcdf0-fce1-4ab5-a227-3fcf16701a6f",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-15T10:30:00",
+      "EndTime": "2019-10-15T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "05d24905-a145-418b-b16e-49cb23a99874",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-15T11:30:00",
+      "EndTime": "2019-10-15T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "6964f414-71ca-4687-83e0-ac23755ebf5a",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-16T07:00:00",
+      "EndTime": "2019-10-16T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "c9930f7a-9cac-4ff1-b9aa-0ee4d182f0fa",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-16T09:30:00",
+      "EndTime": "2019-10-16T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "676143e9-283d-449f-af65-19589d6eafe4",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-16T10:30:00",
+      "EndTime": "2019-10-16T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "57f3f8d7-bf7e-4ad5-9d21-9dab5ba9c52e",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-16T11:30:00",
+      "EndTime": "2019-10-16T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "c389d3db-007c-4e82-a005-68c623600703",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-17T07:00:00",
+      "EndTime": "2019-10-17T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "b90994bc-3900-455b-8af0-c2ee468fd05a",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-17T09:30:00",
+      "EndTime": "2019-10-17T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "8e4fb184-a0af-4ffe-b042-5d1ed4e1b18c",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-17T10:30:00",
+      "EndTime": "2019-10-17T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "5d69780c-f186-481c-927e-cdb2ee91acea",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-17T11:30:00",
+      "EndTime": "2019-10-17T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "107a1327-6380-4da9-9cd5-da37f31c7f3a",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-18T07:00:00",
+      "EndTime": "2019-10-18T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "d189e0da-d891-4a4d-bb5e-4cbb88b5314c",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-18T09:30:00",
+      "EndTime": "2019-10-18T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "e1318687-8d90-42f8-87cf-74f7bcbefb80",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-18T10:30:00",
+      "EndTime": "2019-10-18T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "cdf547c4-9682-43fe-a732-07e3c8207cf2",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-18T11:30:00",
+      "EndTime": "2019-10-18T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "8500171c-e8ef-4e36-b793-c0693b302f7b",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-19T07:00:00",
+      "EndTime": "2019-10-19T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "010c5283-11a8-4d98-8bd7-90813608504b",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-19T09:30:00",
+      "EndTime": "2019-10-19T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "a1fb5187-64a6-4f2d-855c-f61360d9547b",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-19T10:30:00",
+      "EndTime": "2019-10-19T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "42551012-6c64-4de0-8714-818328ecd6ec",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-19T11:30:00",
+      "EndTime": "2019-10-19T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "d887f426-d5f2-4f48-9118-325c7d8f2675",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-21T07:00:00",
+      "EndTime": "2019-10-21T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "0755f92e-b6a6-4555-85cd-9414a594dd55",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-21T09:30:00",
+      "EndTime": "2019-10-21T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "84295a61-cac8-44e4-a67b-d66606eb50ad",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-21T10:30:00",
+      "EndTime": "2019-10-21T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "1a823ce8-78dd-4016-98ce-011f0cf6ecef",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-21T11:30:00",
+      "EndTime": "2019-10-21T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "a59ff335-7aac-4c93-9323-d699dd9871e4",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-22T07:00:00",
+      "EndTime": "2019-10-22T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "1ba9e55e-7fbc-4a6c-9b18-e99fcc2985b1",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-22T09:30:00",
+      "EndTime": "2019-10-22T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "28f2f2e3-8520-4170-a684-5280618ef503",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-22T10:30:00",
+      "EndTime": "2019-10-22T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "de462848-857c-418b-8867-3d4558ecb50e",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-22T11:30:00",
+      "EndTime": "2019-10-22T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "7f14e067-4f62-4b61-94d9-d17fc19d0ac6",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-23T07:00:00",
+      "EndTime": "2019-10-23T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "ffda55c3-d866-4a99-9828-136571b98d2a",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-23T09:30:00",
+      "EndTime": "2019-10-23T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "8d990d52-938f-4bd6-9dd8-c3523f9e741a",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-23T10:30:00",
+      "EndTime": "2019-10-23T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "d6c19d133-0f50-4037-9637-af8bd5daf800",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-23T11:30:00",
+      "EndTime": "2019-10-23T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "c6ad1c85-2d7b-446c-9d1e-951835793264",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-24T07:00:00",
+      "EndTime": "2019-10-24T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "d8e677d0-9ef3-45c5-8f7b-314b44f8199f",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-24T09:30:00",
+      "EndTime": "2019-10-24T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "c24cc48b-b055-4a51-9807-3fdb2907e9a3",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-24T10:30:00",
+      "EndTime": "2019-10-24T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "b7a0676d-f784-4e33-a8c5-34fc2a6aabf5",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-24T11:30:00",
+      "EndTime": "2019-10-24T15:30:00",
+      "Participants": null,
+      "Description": "Nousiainen inspects stuff."
+    },
+    {
+      "Id": "b372c982-c87b-4956-a635-4860f7bee64b",
+      "Subject": "eCraft Management Monthly Meeting",
+      "Organizer": "Ville Hemmilä",
+      "StartTime": "2019-10-25T07:00:00",
+      "EndTime": "2019-10-25T08:30:00",
+      "Participants": [
+        {
+          "Name": "Juho Röyhy",
+          "Title": "Art Director"
+        },
+        {
+          "Name": "Petteri Lehtonen",
+          "Title": "UX Architect"
+        },
+        {
+          "Name": "Tero Tapanainen",
+          "Title": "CTO"
+        }
+      ],
+      "Description": "eCraft Managers talk about the what has happend during the month, future plans, etc..."
+    },
+    {
+      "Id": "eb4ffe5b-1acd-4485-859b-30269d0364ad",
+      "Subject": "Jooses Design workshop",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-25T09:30:00",
+      "EndTime": "2019-10-25T10:30:00",
+      "Participants": null,
+      "Description": "Joose shows you how to do really cool design stuff and talks of his favorite coffee mug."
+    },
+    {
+      "Id": "5ffdca00-547f-422f-a5d5-582af29c68a0",
+      "Subject": "Joose goes sickbr0",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-25T10:30:00",
+      "EndTime": "2019-10-25T11:30:00",
+      "Participants": null,
+      "Description": "Joose shows some sick design techniques he's learend."
+    },
+    {
+      "Id": "cd07fcfa-18c9-46e9-bc8f-32e04e53449e",
+      "Subject": "Nousiainen Inspection",
+      "Organizer": "Joose Rautemaa",
+      "StartTime": "2019-10-25T11:30:00",
+      "EndTime": "2019-10-25T15:30:00",
       "Participants": null,
       "Description": "Nousiainen inspects stuff."
     }

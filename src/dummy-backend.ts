@@ -16,8 +16,7 @@ interface Meeting {
 
 export class DummyBackend {
   currentMeeting = {};
-  tomorrowsMeetings = [];
-  nextMeetings = [];
+  nextMeetings: Meeting[] = [];
   constructor(public meetings: Meeting[] = []) {}
 
   fetchMeetings() {
@@ -102,12 +101,6 @@ export class DummyBackend {
 
     if (currentMeeting[0]) {
       return currentMeeting[0];
-    } else {
     }
-  }
-
-  getTomorrowsMeetings() {
-    // get tomorrows date
-    //
   }
 }
