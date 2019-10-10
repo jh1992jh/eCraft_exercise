@@ -1,6 +1,6 @@
 import { Meeting } from "meeting";
 
-interface scheduledEvent {
+export interface scheduledEvent {
   time: string;
   meeting: Meeting | null;
 }

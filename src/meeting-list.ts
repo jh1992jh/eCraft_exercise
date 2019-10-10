@@ -1,8 +1,12 @@
+import { scheduledEvent } from "./schedule-list-data";
+
 export class MeetingList {
-  schedule: any;
+  schedule: scheduledEvent[];
+  decorationStickPosition: number;
   bind(bindingContext, overrideContext) {
-    //console.log(bindingContext);
+    console.log(bindingContext.decorationStickPosition);
     this.schedule = bindingContext.schedule;
+    this.decorationStickPosition = bindingContext.decorationStickPosition;
     console.log(this.schedule);
     // console.log(this.schedule);
   }

@@ -15,7 +15,7 @@ export class InfoPreview {
     // const meetings = this.api.fetchMeetings();
 
     this.meeting = this.api.getCurrentMeeting() as any;
-
+    console.log(this.meeting);
     if (this.meeting) {
       this.progress = this.calculateMeetingProgress(this.meeting);
       this.processCurrentMeeting();

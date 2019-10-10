@@ -10,7 +10,7 @@ export class InfoFooter {
   created() {
     this.api.fetchMeetings();
     this.processMeetings(this.api.getNextMeetings());
-    console.log(this.api.getNextMeetings());
+    //console.log(this.api.getNextMeetings());
   }
 
   processMeetings(meetings) {
@@ -21,6 +21,11 @@ export class InfoFooter {
         EndTime: getHour(meeting.EndTime)
       };
     });
-    this.meetings = processedMeetings.slice(1, 4);
+    const currentMeeting = this.api.getCurrentMeeting();
+    if (currentMeeting === processedMeetings[0]) {
+      this.meetings = processedMeetings.slice(1, 4);
+    } else {
+      this.meetings = processedMeetings.slice(0, 3);
+    }
   }
 }

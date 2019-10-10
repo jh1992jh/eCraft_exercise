@@ -55,18 +55,29 @@ export class Schedule {
 
   calcDecorationStickPosition() {
     const totalAvailableMins = 10 * 60;
-    const currentMins = new Date()
+    /*const currentMins = new Date()
       .toTimeString()
       .substring(0, 5)
       .split(":");
 
     const currentTotalMins =
       Number(currentMins[0]) * 60 + Number(currentMins[1]);
-    console.log(currentMins, currentTotalMins);
+    console.log(currentMins, currentTotalMins);*/
 
+    const hours = new Date().getHours();
+    const hoursPosition = (hours - 7) * 60;
+    const mins = new Date().getMinutes();
+    const finalPosition = hoursPosition + mins;
+    /*console.log(`
+      hours: ${hours},
+      hoursPosition: ${hoursPosition}
+      mins: ${mins}
+      final: ${finalPosition}
+    `);*/
     // 600 comes from 10 total available hours * 60 (7 - 17), 200 comes from the ul lenght 100% would be 640 that includes five hours but since there are 10 hours in the list it has to be multiplied by 200
     // First param: klo 7 = 0; klo 10 = 180, klo 11 = 240, klo 12 = 300, klo 17 = 600, see how 60 moves it by an hour and 30 by half an hour
-    this.decorationStickPosition = (480 / totalAvailableMins) * 200;
+    this.decorationStickPosition = (finalPosition / totalAvailableMins) * 200;
+
     // ADD DISPLAY NONE IF THE TIME IS NOT BETWEEN 7 - 17
     console.log(this.decorationStickPosition);
   }
