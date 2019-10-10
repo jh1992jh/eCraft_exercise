@@ -1,0 +1,4 @@
+body{background:url(/2daa0b3f30940847e9e4ccf27b747d5b.jpg);background-size:cover;font-family:"Lato", sans-serif;box-sizing:border-box;margin:0}@media (max-width: 700px){body{background:none}}ul{list-style:none}a{text-decoration:none;cursor:pointer;color:#000}.main-container{display:flex;max-height:100%;max-width:100%}@media (max-width: 700px){.main-container{flex-direction:column}}.left-side{flex:7;height:100vh;flex-direction:column}@media (max-width: 700px){.left-side{background:url(/2daa0b3f30940847e9e4ccf27b747d5b.jpg);background-size:cover}}.right-side{flex:3;height:100vh;background:#fff}
+
+
+/*# sourceMappingURL=../app~f075b844.ff59fddcca21df6e35e1.bundle.map*/

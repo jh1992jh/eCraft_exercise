@@ -1,6 +1,6 @@
 import { inject } from "aurelia-framework";
-import { DummyBackend } from "./dummy-backend";
-import { getHour, getDay, getDisplayDate } from "./helpers/parseDate";
+import { DummyBackend } from "../dummy-backend";
+import { getHour, getDay, getDisplayDate } from "../helpers/parseDate";
 import "font-awesome/css/font-awesome.css";
 
 @inject(DummyBackend)

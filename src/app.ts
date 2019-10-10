@@ -19,12 +19,12 @@ export class App {
     config.map([
       {
         route: "",
-        moduleId: PLATFORM.moduleName("schedule"),
+        moduleId: PLATFORM.moduleName("./schedule/schedule"),
         name: "schedule"
       },
       {
         route: "meeting/:Id",
-        moduleId: PLATFORM.moduleName("meeting-detail"),
+        moduleId: PLATFORM.moduleName("./meeting-detail/meeting-detail"),
         name: "meeting-detail"
       }
     ]);

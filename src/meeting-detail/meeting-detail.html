@@ -1,21 +1,22 @@
 <template>
+  <require from="./meeting-detail.scss"></require>
   <div class="meeting-detail-container">
     <header class="meeting-detail-header">
       <a route-href="route: schedule;"><i class="fa fa-angle-left"></i></a>
       <p class="subject">${currentMeeting.Subject}</p>
     </header>
     <div class="meeting-info-block date">
-      <img src="./assets/icons/time.png" alt="date" />
+      <img src="../assets/icons/time.png" alt="date" />
       <p class="date">${currentMeeting.displayDate}</p>
     </div>
     <div class="meeting-info-block time">
-      <img src="./assets/icons/time.png" alt="time" />
+      <img src="../assets/icons/time.png" alt="time" />
       <p class="time">
         ${currentMeeting.StartTime} TO ${currentMeeting.EndTime}
       </p>
     </div>
     <div class="meeting-info-block participants">
-      <img src="./assets/icons/person.png" alt="date" />
+      <img src="../assets/icons/person.png" alt="date" />
       <p class="participants">PARTICIPANTS</p>
       <span class="toggle" click.trigger="toggleShowParticipants()"
         ><i class="fa ${showParticipants ? 'fa-angle-up' : 'fa-angle-down'}"></i
@@ -43,7 +44,7 @@
       </div>
     </div>
     <div class="meeting-info-block participants">
-      <img src="./assets/icons/description.png" alt="date" />
+      <img src="../assets/icons/description.png" alt="date" />
       <p class="participants">DESCRIPTION</p>
       <span class="toggle"></span>
     </div>

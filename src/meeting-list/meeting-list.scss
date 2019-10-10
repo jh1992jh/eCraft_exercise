@@ -1,0 +1,99 @@
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin mobile {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+$muted: rgb(160, 160, 160);
+$yellow: #fc0;
+
+.schedule {
+  .meeting-list-container {
+    width: 100%;
+    height: 80%;
+
+    @include mobile {
+      height: 100%;
+    }
+    .meeting-list {
+      max-width: 100%;
+      height: 80%;
+      overflow-y: scroll;
+      padding: 0 1em;
+      position: relative;
+      .decoration-stick {
+        @include flex-y-center();
+        width: 78%;
+        position: absolute;
+        left: 18%;
+        z-index: 2000;
+        .circle {
+          height: 15px;
+          width: 15px;
+          background: $yellow;
+          border-radius: 100%;
+        }
+        .line {
+          height: 5px;
+          width: 100%;
+          background: $yellow;
+        }
+      }
+      .meeting-list-item {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        .time {
+          height: 1rem;
+          width: 20%;
+          margin-top: -5px;
+          z-index: 0;
+        }
+
+        .line {
+          width: 80%;
+          box-shadow: inset 0px 2px 2px -2px $muted;
+          height: 2px;
+          z-index: 0;
+        }
+
+        .meeting-preview {
+          width: 80%;
+          height: 200%;
+          background: #fff;
+          z-index: 1000;
+          position: absolute;
+          border-left: 5px solid $yellow;
+          left: 20%;
+          box-shadow: 0px 0px 4px $muted;
+          box-sizing: border-box;
+          cursor: pointer;
+          @include flex-col();
+          padding: 1em;
+          h5 {
+            margin: 0;
+            font-weight: 600;
+          }
+
+          .muted {
+            color: $muted;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

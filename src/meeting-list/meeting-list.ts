@@ -1,4 +1,4 @@
-import { scheduledEvent } from "./schedule-list-data";
+import { scheduledEvent } from "../schedule/schedule-list-data";
 
 export class MeetingList {
   schedule: scheduledEvent[];

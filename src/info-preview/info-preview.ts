@@ -1,7 +1,7 @@
 import { inject } from "aurelia-framework";
-import { DummyBackend } from "./dummy-backend";
-import { Meeting } from "./meeting";
-import { getHour } from "./helpers/parseDate";
+import { DummyBackend } from "../dummy-backend";
+import { Meeting } from "../meeting";
+import { getHour } from "../helpers/parseDate";
 
 @inject(DummyBackend)
 export class InfoPreview {
