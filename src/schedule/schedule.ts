@@ -7,19 +7,12 @@ import { Meeting } from "meeting";
 @inject(DummyBackend)
 export class Schedule {
   schedule = scheduleList;
-  //meetings = [];
-  todaysMeetings = [];
   decorationStickPosition: number | boolean = 0;
-  //this.compositionTransactionNotifier = compositionTransaction.enlist();
   constructor(public api: DummyBackend, public meetings: Meeting[]) {}
-  canActivate() {
-    this.meetings = this.api.meetings;
-    if (this.meetings) {
-      return true;
-    }
-  }
+
   created() {
     this.meetings = this.api.meetings;
+    this.calcDecorationStickPosition();
   }
 
   attached() {
@@ -37,8 +30,6 @@ export class Schedule {
         }
       }
     });
-
-    this.calcDecorationStickPosition();
   }
 
   getTodaysMeetings(meeting) {
