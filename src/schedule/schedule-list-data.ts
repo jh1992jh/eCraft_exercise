@@ -2,92 +2,92 @@ import { Meeting } from "meeting";
 
 export interface scheduledEvent {
   time: string;
-  meeting: Meeting | null;
+  meeting?: Meeting | string;
 }
 
 export const scheduleList: scheduledEvent[] = [
   {
     time: "7:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "7:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "8:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "8:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "9:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "9:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "10:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "10:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "11:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "11:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "12:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "12:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "13:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "13:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "14:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "14:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "15:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "15:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "16:00",
-    meeting: null
+    meeting: ""
   },
   {
     time: "16:30",
-    meeting: null
+    meeting: ""
   },
   {
     time: "17:00",
-    meeting: null
+    meeting: ""
   }
 ];

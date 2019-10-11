@@ -2,29 +2,57 @@ import { scheduleList } from "./schedule-list-data";
 import { inject } from "aurelia-framework";
 import { DummyBackend } from "../dummy-backend";
 import { getHour } from "../helpers/parseDate";
+import { Meeting } from "meeting";
 
 @inject(DummyBackend)
 export class Schedule {
   schedule = scheduleList;
-  meetings = [];
+  //meetings = [];
+  todaysMeetings = [];
   decorationStickPosition: number | boolean = 0;
-
-  constructor(public api: DummyBackend) {}
-
+  //this.compositionTransactionNotifier = compositionTransaction.enlist();
+  constructor(public api: DummyBackend, public meetings: Meeting[]) {}
+  canActivate() {
+    this.meetings = this.api.meetings;
+    if (this.meetings) {
+      return true;
+    }
+  }
   created() {
-    this.api.fetchMeetings();
-    this.processMeetings(this.api.meetings);
+    this.meetings = this.api.meetings;
+  }
+
+  attached() {
+    this.processMeetings(this.meetings);
 
     const times = this.schedule.map(scheduleItem => scheduleItem.time);
 
     this.meetings.forEach(meeting => {
-      const timeInd = times.indexOf(meeting.StartTime);
-      if (this.schedule[timeInd]) {
-        this.schedule[timeInd].meeting = meeting;
+      const processedMeeting = this.getTodaysMeetings(meeting);
+      if (processedMeeting) {
+        const timeInd = times.indexOf(processedMeeting.StartTime);
+
+        if (timeInd > -1) {
+          this.schedule[timeInd].meeting = processedMeeting;
+        }
       }
     });
 
     this.calcDecorationStickPosition();
+  }
+
+  getTodaysMeetings(meeting) {
+    const today = new Date().toISOString().substring(0, 10);
+
+    const meetingDay = meeting => {
+      return meeting.FullStartDate.substring(0, 10);
+    };
+
+    if (meetingDay(meeting) === today) {
+      return meeting;
+    } else {
+      return null;
+    }
   }
 
   processMeetings(meetings) {
@@ -34,6 +62,7 @@ export class Schedule {
         ...meeting,
         StartTime: getHour(meeting.StartTime),
         EndTime: getHour(meeting.EndTime),
+        FullStartDate: meeting.StartTime,
         height: this.calcMeetingCardHeight(meeting)
       };
     });

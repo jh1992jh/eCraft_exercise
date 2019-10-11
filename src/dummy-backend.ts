@@ -21,7 +21,8 @@ export class DummyBackend {
 
   fetchMeetings() {
     this.meetings = meetings;
-    this.meetings = this.getTodaysMeetings(this.meetings);
+    //this.meetings = this.getTodaysMeetings(meetings);
+    //this.meetings = this.getTodaysMeetings(meetings);
     this.currentMeeting = this.getCurrentMeeting();
     return this.meetings;
   }

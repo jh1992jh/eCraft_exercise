@@ -6,5 +6,6 @@ export class MeetingList {
   bind(bindingContext, overrideContext) {
     this.schedule = bindingContext.schedule;
     this.decorationStickPosition = bindingContext.decorationStickPosition;
+    //console.log(this.schedule);
   }
 }
