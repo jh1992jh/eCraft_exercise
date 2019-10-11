@@ -50,7 +50,7 @@ export class Schedule {
 
     const height = (totalEndMins - totalStartMins) / 3;
 
-    return `${height}%`;
+    return `${height * 10}%`;
   }
 
   calcDecorationStickPosition() {
